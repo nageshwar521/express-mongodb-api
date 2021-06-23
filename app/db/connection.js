@@ -1,4 +1,3 @@
-const { connect } = require("mongoose");
 const { MONGO_URI } = require("../constants");
 const MongoClient = require("mongodb").MongoClient;
 

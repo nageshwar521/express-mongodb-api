@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const http = require("http");
 const cors = require("cors");
@@ -6,8 +7,6 @@ const { initDB } = require("./app/db/connection");
 const authRoutes = require("./app/routes/auth");
 const usersRoutes = require("./app/routes/users");
 const { verifyToken } = require("./app/middlewares/auth");
-
-require("dotenv").config();
 
 const app = express();
 const server = http.createServer(app);
